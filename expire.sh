@@ -5,3 +5,5 @@ today=$((`date '+%s'`))
 leftsec=$(($expire - $today))
 leftdays=$(($leftsec/86400))
 echo $leftdays
+######
+########
