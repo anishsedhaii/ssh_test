@@ -9,7 +9,9 @@ echo "$d" >> "$file_name"
 git config --global user.email "awitice23@gmail.com"
 git config --global user.name "Anish Sedhai"
 
+
 git status
-git commit -am "feat: add date $d"
+git add .
+git commit -m "feat: add date $d"
 
 git push origin main
