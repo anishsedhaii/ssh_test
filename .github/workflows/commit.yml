@@ -3,7 +3,7 @@ name: Commit Every Day
 on:
   push: 
     branches: 
-      main
+      - main
 
   schedule:
    - cron: "* 5 * * *"
