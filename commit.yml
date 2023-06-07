@@ -1,0 +1,21 @@
+name: Commit Every Day
+
+on:
+  push: 
+    branches: 
+      - not-present
+
+  schedule:
+   - cron: "* 5 * * *"
+  
+jobs:
+  test-job:
+    runs-on: ubuntu-latest
+    steps:
+      -  name: Checkout Repo
+         uses: actions/checkout@v2
+
+      -  name: List all files
+         run: |
+          chmod a+rwx script.sh
+          ./script.sh
